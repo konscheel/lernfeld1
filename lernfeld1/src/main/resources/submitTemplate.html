@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Kontaktformular</title>
+    <link rel="icon" href="/static/images/favicon.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+    <style type="text/css" id="vuetify-theme-stylesheet">
+        .v-application a {
+            color: #0d5494;
+        }
+
+        .v-application .primary {
+            background-color: #0d5494 !important;
+            border-color: #0d5494 !important;
+        }
+    </style>
+    <style>
+        .pb-sidebar-frame-container > iframe {
+            width: 100%;
+            height: 100%;
+            border-width: 0;
+            border-style: initial !important;
+            border-color: initial !important;
+            border-image: initial !important
+        }
+
+        .pb-notification-frame-container > iframe {
+            width: 100%;
+            height: 100%;
+            border-width: 0;
+            border-style: initial !important;
+            border-color: initial !important;
+            border-image: initial !important
+        }
+    </style>
+    <script type="text/javascript">
+        function checkForMail() {
+            if (document.getElementById("mail").value !== "") {
+                alert("Absenden erfolgreich!");
+            }
+            else alert("Bitte gib eine gültige Email-Adresse ein");
+        }
+
+    </script>
+</head>
+<body>
+<noscript><strong>We're sorry but this website doesn't work properly without JavaScript enabled. Please enable it to
+    continue.</strong></noscript>
+<div data-app="true" class="v-application v-application--is-ltr theme--light" id="app">
+    <div class="v-application--wrap">
+        <header class="v-sheet v-sheet--tile theme--dark v-toolbar v-app-bar v-app-bar--fixed primary"
+                data-booted="true"
+                style="height: 100px; margin-top: 0; transform: translateY(0px); left: 0; right: 0;">
+            <div class="v-toolbar__content" style="height: 64px;">
+                <div data-v-b08af8ac="" class="v-toolbar__title headline"><img data-v-b08af8ac="" id="logo"
+                                                                               src="data:image/png;base64,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"
+                                                                               alt="[SCOOP logo]" width="215"
+                                                                               height="85"></div>
+            </div>
+        </header>
+    </div>
+</div>
+<h3>Herzlichen Glückwunsch!</h3>
+<p>Es ist dir gelungen, unseren Code zu reparieren. Wenn du möchtest, lass uns deine E-Mail-Adresse da, und wir melden uns bei dir.</p>
+<form>
+    <label>
+        <input id="mail" type="text" name="email">
+    </label>
+    <label>
+        <input type="button" value="Absenden" onclick="checkForMail()">
+    </label>
+</form>
+</body>
+</html>
